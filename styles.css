@@ -1,0 +1,26 @@
+.shared{
+            height: 100%;
+            width: 50%;
+            border: 3px solid red;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-family: "Times New Roman";
+        
+        }
+        #SarvDiv1{
+            font-size: 12px;
+            color: green;
+            
+        }
+            
+        #SarvDiv2{
+            font-size: 27px;
+            color: purple;
+    
+        }
+        
+        #SarvDiv3{
+            font-size: 40px;
+            color: orange;
+            
+        }
