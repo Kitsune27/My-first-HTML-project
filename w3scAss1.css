@@ -6,6 +6,18 @@ p {
   font-family: Verdana;
 }
 
+.greenbox {
+  min-width: 400px;
+  max-width: 600px;
+  min-height: 50px;
+  max-height: 150px;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 0px 0px 0px 5px;
+  border-color: #27D426;
+  text-indent: 10px;
+}
+
 .btn {
   color: #FFF;
   /*-- border: 1px solid #000; */
