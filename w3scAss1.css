@@ -16,25 +16,35 @@ p {
   border-width: 0px 0px 0px 5px;
   border-color: #27D426;
   text-indent: 10px;
-  background: rgb(112, 255, 157, 0.5);
+  background: rgba(180, 255, 171, 0.5);
+}
   
-.Example {
+.Sample {
   min-width: 400px;
   max-width: 600px;
   min-height: 50px;
   max-height: 150px;
-  overflow: scroll;
+  overflow: hidden;
   border-style: solid;
-  border-width: 0px 0px 0px 5px;
-  border-color: #27D426;
-  text-indent: 10px;
+  border-width: 45px 25px 45px 25px;
+  border-color: #E3E5E1;
+  /*text-indent: 10px;*/
+  background: #FFFFFF;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-left-color: #27D426;
+  padding-top: inherit;
+}
+
+.inside-sample {
+  padding
 }
 
 .pgragh {
   font-weight: bold;
 }
 
-.btn {
+.btns {
   color: #FFF;
   /*-- border: 1px solid #000; */
   border-radius: 4px;
@@ -46,9 +56,75 @@ p {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .drpbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover:hover .drpbtn {
+    background-color: #111;
+}
+
+li.MORE {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.MORE:hover .dropdown-content {
+    display: block;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.btn-home {
+  background-color: #FFF
+}
 
 
-.content-box {
+
+/*.content-box {
   background: rgba(255, 255, 255, 0.9);
   height: 500px;
   margin: 0 auto;
@@ -56,4 +132,4 @@ p {
   top: 220px;
   width: 80%;
   overflow: scroll;
-}
+}*/
