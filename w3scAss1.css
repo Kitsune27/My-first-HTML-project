@@ -2,8 +2,13 @@ h1, h2, h3 {
   font-family: "Segoe UI";
 }
 
-p {
+body {
   font-family: Verdana;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
 }
 
 .greenbox {
@@ -21,15 +26,17 @@ p {
   
 .Sample {
   min-width: 400px;
-  max-width: 1500px;
+  max-width: 2000px;
   min-height: 50px;
-  max-height: 600px;
+  max-height: 400px;
+  font-weight: 400;
   overflow: hidden;
-  border-style: solid;
+  /*border-style: solid;
   border-width: 45px 15px 45px 15px;
-  border-color: #E3E5E1;
-  /*text-indent: 10px;*/
-  padding-top: inherit;
+  border-color: #E3E5E1;*/
+  text-indent: 25px;
+  background-color: #E3E5E1;
+  margin: 25px 5px 15px 5px;
 }
 
 .inside-sample {
@@ -38,6 +45,22 @@ p {
   border-left-width: 5px;
   border-left-color: #27D426;
   overflow: hidden;
+  margin: 25px 20px 15px 20px;
+  min-height: 50px;
+  max-height: 200px;
+  text-indent: 20px;
+}
+
+.inside-sample pre{
+  font-family: Consolas, monospace !important;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
 }
 
 .p1 {
@@ -111,49 +134,109 @@ li.MORE {
     display: block;
 }
 
-/*li a:hover:not(.active) {
+li a:hover:not(.active) {
     background-color: #111;
-}*/
-
-.active {
-  background-color: #4CAF50;
 }
 
-.button1 {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-
 .active2:hover {
+  background-color: #4CAF50;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.button {
-  background-color: #FFF;
-  float: left;
+.btn {
   border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 28px;
 }
 
-.home-btn2:hover {
+.btn.home {
+  background-color: #FFF; /* White */
+  border: 2px solid #555555;
+  float: left;
+}
+
+.btn.next {
+  background-color: #4CAF50; /* Green */
+  float: right;
+}
+
+.btn:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transition-duration: 0.4s;
+}
+
+.btn.try {
+  float: left;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 25px;
+  margin: 25px 25px;
+}
+
+.btn.getcert {
+  float: left;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 25px;
+  margin: 25px 25px;
+}
+
+
+/*.button1 {*/
+//    background-color: #4CAF50; /* Green */
+/*    float: right;*/
+/*    border: none;*/
+/*    color: white;*/
+/*    padding: 15px 32px;*/
+/*    text-align: center;*/
+/*    text-decoration: none;*/
+/*    font-size: 16px;*/
+/*    margin: 4px 2px;*/
+/*    cursor: pointer;*/
+//    -webkit-transition-duration: 0.4s; /* Safari */
+/*    transition-duration: 0.4s;*/
+/*}*/
+
+/*.button {*/
+//    background-color: #FFF; /* White */
+/*    border: 2px solid #555555;*/
+/*    float: left;*/
+/*    color: black;*/
+/*    padding: 15px 32px;*/
+/*    text-align: center;*/
+/*    text-decoration: none;*/
+/*    font-size: 16px;*/
+/*    margin: 4px 2px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.home-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #FFF;
+}*/
+
+  /* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: green;
+}
+
+/* selected link */
+a:active {
+    color: black;
 }
 
 
